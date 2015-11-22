@@ -8,7 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 
 public class TopLevelActivity extends AppCompatActivity
@@ -22,11 +21,6 @@ public class TopLevelActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top_level);
 
-        Intent intent = getIntent();
-
-        String student_info = intent.getStringExtra(STUDENT_INFO);
-        System.out.println(" ---------------- " + student_info);
-        Toast.makeText(this, student_info, Toast.LENGTH_LONG);
         optionsView = (ListView)findViewById(R.id.list_options);
         optionsView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {

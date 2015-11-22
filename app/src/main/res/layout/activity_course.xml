@@ -13,5 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="[description]" />
+        android:text="[description]"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
 </RelativeLayout>

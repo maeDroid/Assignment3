@@ -37,8 +37,6 @@ public class CoursesActivity
 
             helper   = new BCITDatabaseHelper(this);
             database = helper.getReadableDatabase();
-            System.out.println("@@@ COURSES_ACTIVITY");
-
             cursor   = database.query(BCITDatabaseHelper.COURSE_TABLE,
                     new String[]
                             {
